@@ -1,8 +1,13 @@
 import React from 'react';
+import { mdiCartPlus } from '@mdi/js';
+import Icon from '@mdi/react';
 const Home = () => {
   return (
     <div>
-      <div>Add to cart</div>
+      <div className="cart">
+        <Icon path={mdiCartPlus} title="User Profile" size={1} color="red" />{' '}
+        Add to cart
+      </div>
       <div className="cart-wraper">
         <div className="img-wrapper item">
           <img
